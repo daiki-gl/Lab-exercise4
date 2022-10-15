@@ -4,13 +4,6 @@ public class Operators {
     protected String operator;
     protected double sum;
 
-    public Operators() {
-        this.inputNum1 = 0;
-        this.inputNum2 = 0;
-        this.operator = "+";
-        this.sum = 0;
-    }
-
     public void addtion(int inputNum1, int inputNum2) {
         sum = inputNum1 + inputNum2;
         System.out.println(inputNum1 + " + " + inputNum2 + " = " + sum);
@@ -27,9 +20,9 @@ public class Operators {
     }
 
     public void divide(int inputNum1, int inputNum2) {
-        sum =(double) inputNum1 / inputNum2;
-        sum = (int) (sum * 100);
-        sum = sum / 100;
+        sum = (double) inputNum1 / inputNum2;
+        // sum = (int) (sum * 1000);
+        // sum = sum / 1000;
         System.out.println(inputNum1 + " / " + inputNum2 + " = " + sum);
     }
 }
